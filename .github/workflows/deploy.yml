@@ -1,31 +1,39 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
 name: Node.js CI
 
+# 监听变化执行工作流
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
   build:
-
+    # 操作系统环境
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+        node-version: [14.x, 16.x]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - run: echo "----- `node -v` -----"
+    - run: echo "----- `npm -v` -----"
+    - run: echo "----- install dependencies -----"
+    - run: npm install
+    - run: echo "----- build -----"
+    - run: npm run build
+    - run: echo "----- deploy -----"
+    - run: ls -R docs
+    # - name: deploy
+    #   uses: easingthemes/ssh-deploy@v2
+    #   env:
+    #     SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+    #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+    #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
+    #     ARGS: -avzr --delete
+    #     SOURCE: public/
+    #     TARGET: /root/code/public/
+    # - run: echo "----- deploy done -----"
