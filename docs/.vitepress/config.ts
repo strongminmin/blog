@@ -4,7 +4,7 @@ import { getThemeConfig, defineConfig } from '@sugarat/theme/node'
 // 详见文档: https://theme.sugarat.top/
 const blogTheme = getThemeConfig({
   // 文章默认作者
-  author: 'Ximina',
+  author: 'ximina',
   // 友链
   // friend: [
   //   {
