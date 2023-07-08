@@ -30,11 +30,11 @@ jobs:
       run: >
         cd ~ && mkdir .ssh &&
         touch ~/.ssh/known_hosts &&
-        ssh-keyscan -H "$ACCESS_TOKEN" >> ~/.ssh/known_hosts
+        ssh-keyscan -H "$ACCESS_TOKEN" >>~/.ssh/known_hosts
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
     - name: deploy
-      uses: easingthemes/ssh-deploy@v2
+      uses: easingthemes/ssh-deploy@main
       env:
         SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
