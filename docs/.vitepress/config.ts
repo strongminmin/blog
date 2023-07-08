@@ -38,6 +38,16 @@ const blogTheme = getThemeConfig({
   //   ],
   //   duration: 0
   // }
+  comment: {
+    repo: 'strongminmin/blog',
+    repoId: 'R_kgDOJ5DDzQ',
+    category: 'Announcements',
+    categoryId: 'DIC_kwDOJ5DDzc4CXwNN',
+    mapping: 'pathname',
+    inputPosition: 'bottom',
+    lang: 'zh-CN',
+    loading: 'lazy',
+  }
 })
 
 // Vitepress 默认配置
