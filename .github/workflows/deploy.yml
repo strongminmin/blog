@@ -34,5 +34,5 @@ jobs:
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         ARGS: -avzr --delete
         SOURCE: ./docs/.vitepress/dist
-        TARGET: /root/code/blog/
+        TARGET: /root/code/blog
     - run: echo "----- deploy done -----"
