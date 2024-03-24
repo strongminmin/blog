@@ -30,7 +30,7 @@ jobs:
     - run: npm run build
     - run: echo "----- deploy -----"
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v4
+      uses: actions/upload-pages-artifact@v3
       with:
         path: './docs/.vitepress/dist'
     - name: Deploy to GitHub Pages
