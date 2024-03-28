@@ -4,6 +4,6 @@ layout: home
 blog:
  name: 'ximina'
 #  motto: 简约风的 Vitepress 博客主题
- inspiring: 都是风景，幸会 ~ 
+ inspiring:  持续、思考、努力成为你希望的自己 ~
  pageSize: 6
 ---
