@@ -9,7 +9,8 @@ tag:
  - Javascript
 ---
 ## Scope hoisting 所解决的问题
-webpack 万物皆模块的理念，每一个 js 都是一个 JavaScript 模块。一个 bundle 是由多个 module 合成的，一个 bundle 是一个 js 文件，所以 webpack 自己实现了一套 commonjs 规范用于让 js 成为一个独立的模块。
+webpack具有万物皆模块的理念，每一个js文件都是一个JavaScript模块。<br>
+一个bundle是由多个module合成的，一个bundle是一个js文件，所以webpack自己实现了一套commonjs规范用于让js成为一个独立的模块。<br>
 来一个 🌰：
 比如说有 3 个模块，index.js、add.js、sum.js
 ```
@@ -97,12 +98,12 @@ console.log(sum(arr))
   }
 })
 ```
-可以看出由 webpack 打包出来的是一个大大的 IIFE，上面一大堆是 webpack 自己实现的 commonjs 规范，下面的传参是我们的代码，可以看出 webpack 把我们的代码的每一个文件使用 IIFE 来做模块化，正式因为如此，问题出来了。
-**大量的函数闭包包裹代码，导致体积增大，模块越来越明显，运行代码时创建的函数作用域变多，导致内存开销变大。**
-解决上面问题的方法就是 scope hoisting
+可以看出由webpack打包出来的是一个大大的IIFE，上面一大堆是webpack自己实现的commonjs规范，下面的传参是我们的代码，可以看出webpack把我们的代码的每一个文件使用IIFE来做模块化，正式因为如此，问题出来了。<br>
+**大量的函数闭包包裹代码，导致体积增大，模块越来越明显，运行代码时创建的函数作用域变多，导致内存开销变大。**<br>
+解决上面问题的方法就是: ***scope hoisting***
 
 ## 使用
-使用 scope hoisting 有两种方式：
+使用 scope hoisting 有两种方式：<br>
 - 使用 webpack 自带的 ModuleConcatenationPlugin 插件开启
 ```
 module.exports = {
@@ -157,10 +158,10 @@ module.exports = {
 
 ```
 
-你会发现，使用 scope hoisting 方式，IIFE 变成一个了(原来有 3 个)，add.js 和 sum.js 里面的代码被打包到 了 index.js 中，减少了 IIFE 的数量。
+你会发现，使用scope hoisting 方式，IIFE 变成一个了(原来有 3 个)，add.js和sum.js 里面的代码被打包到了 index.js 中，减少了IIFE的数量。<br>
 
 >原理： scope hoisting 将所有引入的模块按照顺序放在一个函数作用域里面，然后适当的重命名一些变量以防止变量名冲突。(总结一句：引用一次就内联进来，减少 IIFE 的数量)
 
 
 ## 总结
-以上就是 IIFE 的使用方式，对比一下没有 scope hoisting 的状态：减少了函数声明代码从而减少了函数作用域的生成，降低了内存开销。
+以上就是IIFE的使用方式，对比一下没有scope hoisting的状态：减少了函数声明代码从而减少了函数作用域的生成，降低了内存开销。
