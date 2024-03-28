@@ -6,7 +6,7 @@ hiddenCover: false
 comment: true
 outline: [2,3]
 tag:
- - Javascript
+ - webpack
 ---
 ## Scope hoisting 所解决的问题
 webpack具有万物皆模块的理念，每一个js文件都是一个JavaScript模块。  
