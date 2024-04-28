@@ -6,7 +6,7 @@ hiddenCover: false
 comment: true
 outline: [2,3]
 tag:
- - Javascript
+ - javascript
 ---
 
 # Set与WeakSet

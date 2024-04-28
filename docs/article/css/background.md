@@ -6,7 +6,7 @@ hiddenCover: false
 comment: true
 outline: [2,3]
 tag:
- - CSS
+ - css
 ---
 
 # 漫谈background各种属性的特性

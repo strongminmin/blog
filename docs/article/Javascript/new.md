@@ -6,7 +6,7 @@ hiddenCover: false
 comment: true
 outline: [2,3]
 tag:
- - Javascript
+ - javascript
 ---
 一句话介绍JavaScript中的new运算符:
 > <font color=blue> new运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象类型之一。</font>
