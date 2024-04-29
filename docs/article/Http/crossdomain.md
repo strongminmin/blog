@@ -16,11 +16,11 @@ tag:
 比如：
 源 1 |	源 2 |是否同源
 -|:-:|:-:
-http://www.baidu.com | http://www.baidu.com/news | ✅
-https://www.baidu.com | http://www.baidu.com | ❌
-http://localhost:5000 | http://localhost:7000 | ❌
-http://localhost:5000 | http://127.0.0.1:5000 | ❌
-http://www.baidu.com | http://baidu.com	| ❌
+`http://www.baidu.com` | `http://www.baidu.com/news` | ✅
+`https://www.baidu.com` | `http://www.baidu.com` | ❌
+`http://localhost:5000` | `http://localhost:7000` | ❌
+`http://localhost:5000` | `http://127.0.0.1:5000` | ❌
+`http://www.baidu.com` | `http://baidu.com`	| ❌
 		
 同源策略是指，若页面的源和页面运行过程中加载的源不一致时，处于安全考虑，浏览器会对跨域资源访问进行一些限制。  
 
