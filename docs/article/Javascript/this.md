@@ -3,6 +3,8 @@ title: 探索JavaScript的this机制
 sticky: 999
 description: 探索JavaScript的this机制
 hiddenCover: false
+date: 2023-06-18
+comment: true
 comment: true
 outline: [2,3]
 tag:

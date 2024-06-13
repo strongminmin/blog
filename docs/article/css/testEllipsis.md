@@ -3,6 +3,8 @@ title: CSS：文本内容超出省略号
 sticky: 999
 description: CSS：文本内容超出省略号
 hiddenCover: false
+type: string
+date: 2023-02-10
 comment: true
 outline: [2,3]
 tag:

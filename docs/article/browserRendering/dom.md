@@ -3,11 +3,14 @@ title: 如何生成一个DOM树
 sticky: 999
 description: dom树的生成过程
 hiddenCover: false
+type: string
+date: 2023-11-10
 comment: true
 outline: [2,3]
 tag:
  - browserRendering, dom
 ---
+# 如何生成一个DOM树
 浏览器渲染过程中，我们都知道首先会将HTML转换为DOM，这个转换过程很容易被忽略，面试过程也有被问到，因此就来总结一下。  
 
 ## 什么是DOM

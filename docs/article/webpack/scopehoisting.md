@@ -3,6 +3,8 @@ title: scope hoisting 原理
 sticky: 999
 description: 深究 scope hoisting 原理
 hiddenCover: false
+date: 2023-08-10
+comment: true
 comment: true
 outline: [2,3]
 tag:

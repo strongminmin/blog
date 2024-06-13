@@ -3,11 +3,14 @@ title: new运算符的模拟实现
 sticky: 999
 description: 手写实现new运算符
 hiddenCover: false
+date: 2023-05-06
+comment: true
 comment: true
 outline: [2,3]
 tag:
  - javascript
 ---
+# new运算符的模拟实现
 一句话介绍JavaScript中的new运算符:
 > <font color=blue> new运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象类型之一。</font>
 
