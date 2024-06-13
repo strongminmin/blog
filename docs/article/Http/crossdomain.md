@@ -2,6 +2,8 @@
 title: 跨域常见的解决办法
 sticky: 999
 description: 同源策略、跨域
+type: string
+# date: 
 hiddenCover: false
 comment: true
 outline: [2,3]
