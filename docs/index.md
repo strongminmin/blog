@@ -10,7 +10,7 @@ blog:
     - 行则将至，做则必成。
     - 好运都藏在努力里。
     - 半山腰太挤了，去山顶看看吧 ~
- inspiring: 1000
+ inspiringTimeout: 1000
  author: Ximina
  logo: /logo.png
  avatarMode: split
