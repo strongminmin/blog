@@ -2,9 +2,9 @@
 title: 如何生成一个DOM树
 sticky: 999
 description: dom树的生成过程
-hiddenCover: false
 type: string
 date: 2023-11-10
+hiddenCover: false
 comment: true
 outline: [2,3]
 tag:

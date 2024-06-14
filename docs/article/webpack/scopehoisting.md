@@ -3,6 +3,7 @@ title: scope hoisting 原理
 sticky: 999
 description: 深究 scope hoisting 原理
 hiddenCover: false
+type: string
 date: 2023-08-10
 comment: true
 comment: true
@@ -10,6 +11,7 @@ outline: [2,3]
 tag:
  - webpack
 ---
+# scope hoisting 原理
 ## Scope hoisting 所解决的问题
 webpack具有万物皆模块的理念，每一个js文件都是一个JavaScript模块。  
   

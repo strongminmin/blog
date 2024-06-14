@@ -2,8 +2,9 @@
 title: new运算符的模拟实现
 sticky: 999
 description: 手写实现new运算符
-hiddenCover: false
+type: string
 date: 2023-05-06
+hiddenCover: false
 comment: true
 comment: true
 outline: [2,3]

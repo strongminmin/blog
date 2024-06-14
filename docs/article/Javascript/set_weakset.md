@@ -2,8 +2,9 @@
 title: Set与WeakSet
 sticky: 999
 description: Set与WeakSet
-hiddenCover: false
+type: string
 date: 2023-05-25
+hiddenCover: false
 comment: true
 comment: true
 outline: [2,3]

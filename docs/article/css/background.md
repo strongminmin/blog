@@ -2,9 +2,9 @@
 title: 漫谈background各种属性的特性
 sticky: 999
 description: 漫谈background各种属性的特性
-hiddenCover: false
 type: string
 date: 2023-03-06
+hiddenCover: false
 comment: true
 outline: [2,3]
 tag:
